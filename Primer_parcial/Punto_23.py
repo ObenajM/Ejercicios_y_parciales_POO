@@ -16,4 +16,4 @@ elif discriminante == 0:
         raiz = -b / (2*a)
     print("La única solución es: ",raiz) 
 else:
-    print("No hay soluciones reales")
+    print("No hay solución en los números reales")
