@@ -13,10 +13,8 @@ class Empleado(object):
         return self.salario_bruto() * (1 - self.porc_retencion / 100)
     
     def __str__(self):
-        return "Nombre: {} -Salario Bruto: ${} -Salario Neto: ${}".format(self.nombre, self.salario_bruto(),self.salario_neto())
+        return "Codigo: {} - Nombre: {} - Salario Bruto: ${} - Salario Neto: ${}".format(self.cod_empleado,self.nombre, self.salario_bruto(),self.salario_neto())
     
 Empleado1 = Empleado("001", "Juan", 40, 15, 10)
 Empleado2 = Empleado("002", "Maria", 50, 20, 5)
 print(Empleado1, Empleado2)
-        
-        
