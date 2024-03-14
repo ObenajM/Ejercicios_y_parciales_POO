@@ -14,10 +14,13 @@ class Empleado:
         else:
             print(self.nombre)
 
+def main():
+    nombre_empleado = input("Ingrese el nombre del empleado: ")
+    salario_por_hora = float(input("Ingrese el salario por hora del empleado: "))
+    horas_trabajadas = float(input("Ingrese el número de horas trabajadas en el mes: "))
 
-nombre_empleado = input("Ingrese el nombre del empleado: ")
-salario_por_hora = float(input("Ingrese el salario por hora del empleado: "))
-horas_trabajadas = float(input("Ingrese el número de horas trabajadas en el mes: "))
-
-empleado = Empleado(nombre_empleado, salario_por_hora, horas_trabajadas)
-empleado.comentario_salario()
+    empleado = Empleado(nombre_empleado, salario_por_hora, horas_trabajadas)
+    empleado.comentario_salario()
+    
+if __name__ == "__main__":
+    main()
