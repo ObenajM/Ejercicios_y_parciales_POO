@@ -3,7 +3,6 @@ class Esfera:
         self.nombre = nombre
         self.peso = peso
 
-
 def main():
     peso_A = float(input("Ingrese el peso de la esfera A: "))
     peso_B = float(input("Ingrese el peso de la esfera B: "))
@@ -19,7 +18,6 @@ def main():
         print("La esfera de mayor peso es la", esfera_B.nombre)
     elif esfera_C.peso > esfera_A.peso and esfera_C.peso > esfera_B.peso:
         print("La esfera de mayor peso es la", esfera_C.nombre)
-
 
 if __name__ == "__main__":
     main()
