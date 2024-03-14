@@ -10,6 +10,15 @@ class Circulo:
   def calcular_perimetro(self):
       return 2 * math.pi * self.radio
 
+class Cuadrado:
+  def __init__(self, lado):
+    self.lado = lado
+
+  def calcular_area(self):
+    return self.lado * self.lado
+
+  def calcular_perimetro(self):
+    return 4 * self.lado
 
 class Rectangulo:
   def __init__(self, base, altura):
@@ -20,19 +29,7 @@ class Rectangulo:
     return self.base * self.altura
 
   def calcular_perimetro(self):
-    return 2 * self.base + 2 * self.altura
-
-
-class Cuadrado:
-  def __init__(self, lado):
-    self.lado = lado
-
-  def calcular_area(self):
-    return self.lado * self.lado
-
-  def calcular_perimetro(self):
-    return 4 * self.lado
-  
+    return 2 * self.base + 2 * self.altura  
 
 class Triangulo_rectangulo:
   def __init__(self, base, altura):
