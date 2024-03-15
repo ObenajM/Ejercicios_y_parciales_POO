@@ -20,7 +20,7 @@ class EcuacionCuadratica:
                 raiz = 0
             else:
                 raiz = -self.b / (2 * self.a)
-                print("La única solución es:", raiz)
+            print("La única solución es:", raiz)
         else:
             print("No hay solución en los números reales")
 
