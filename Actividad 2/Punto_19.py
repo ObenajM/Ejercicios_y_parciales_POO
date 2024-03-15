@@ -15,6 +15,7 @@ class TrianguloEquilatero(object):
     def __str__(self):
         return "Lado: {} - Area: {} - Perimetro: {} - Altura: {}".format(self.lado, self.area(), self.perimetro(), self.altura())
 
-Triangulo1 = TrianguloEquilatero(3)
+Lado= float(input("Ingrese el lado del triangulo: "))
+Triangulo1 = TrianguloEquilatero(Lado)
 
 print(Triangulo1)
