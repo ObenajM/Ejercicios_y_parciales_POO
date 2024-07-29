@@ -53,6 +53,7 @@ class Triangulo_rectangulo:
     else:
       return "Es un triángulo isósceles"
   
+
 class Figuras:
   @staticmethod
   def main():

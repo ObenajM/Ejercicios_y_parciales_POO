@@ -14,7 +14,12 @@ class Empleado(object):
     
     def __str__(self):
         return "Codigo: {} - Nombre: {} - Salario Bruto: ${} - Salario Neto: ${}".format(self.cod_empleado,self.nombre, self.salario_bruto(),self.salario_neto())
-    
-Empleado1 = Empleado("001", "Juan", 40, 15, 10)
-Empleado2 = Empleado("002", "Maria", 50, 20, 5)
-print(Empleado1, Empleado2)
+
+Cod= input("Ingrese el código del empleado: ")
+Nom= input("Ingrese el nombre del empleado: ")
+Horas= float(input("Ingrese el número de horas trabajadas: "))
+Valor= float(input("Ingrese el valor de la hora: "))
+Ret= float(input("Ingrese el porcentaje de retención: "))
+Empleado1 = Empleado(Cod, Nom, Horas, Valor, Ret)
+print(Empleado1)
+
