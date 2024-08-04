@@ -18,7 +18,6 @@ class PagoMatricula:
     def __str__(self):
         return "{}".format(self.Matricula())
 
-# Función que se ejecutará al hacer clic en el botón "Calcular Matrícula"
 def calcular_matricula():
     try:
         Ni = entry_ni.get()
@@ -32,7 +31,6 @@ def calcular_matricula():
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingresa valores numéricos válidos para Patrimonio y Estrato.")
 
-# Función que se ejecutará al hacer clic en el botón "Limpiar"
 def limpiar_campos():
     entry_ni.delete(0, tk.END)
     entry_nombres.delete(0, tk.END)
@@ -40,12 +38,10 @@ def limpiar_campos():
     entry_estrato.delete(0, tk.END)
     result_text.delete(1.0, tk.END)
 
-# Crear la ventana principal
 root = tk.Tk()
 root.title("Cálculo de Pago de Matrícula")
 root.geometry("400x450")  # Ancho x Alto
 
-# Crear y colocar widgets
 tk.Label(root, text="Número de Inscripción").pack(pady=5)
 entry_ni = tk.Entry(root)
 entry_ni.pack(pady=5)
@@ -65,9 +61,7 @@ entry_estrato.pack(pady=5)
 tk.Button(root, text="Calcular Matrícula", command=calcular_matricula).pack(pady=10)
 tk.Button(root, text="Limpiar Campos", command=limpiar_campos).pack(pady=10)
 
-# Crear cuadro de texto para mostrar el resultado
 result_text = tk.Text(root, height=5, width=40)
 result_text.pack(pady=20)
 
-# Ejecutar el bucle principal
 root.mainloop()

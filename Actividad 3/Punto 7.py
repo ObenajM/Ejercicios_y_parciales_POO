@@ -17,7 +17,6 @@ class NumMayor:
     def __str__(self):
         return "{}".format(self.mayor())
 
-# Función que se ejecutará al hacer clic en el botón "Determinar Mayor"
 def determinar_mayor():
     try:
         num1 = float(entry_num1.get())
@@ -29,18 +28,15 @@ def determinar_mayor():
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingresa valores numéricos válidos.")
 
-# Función que se ejecutará al hacer clic en el botón "Limpiar"
 def limpiar_campos():
     entry_num1.delete(0, tk.END)
     entry_num2.delete(0, tk.END)
     result_text.delete(1.0, tk.END)
 
-# Crear la ventana principal
 root = tk.Tk()
 root.title("Determinar Número Mayor")
 root.geometry("400x300")  # Ancho x Alto
 
-# Crear y colocar widgets
 tk.Label(root, text="Primer Número").pack(pady=5)
 entry_num1 = tk.Entry(root)
 entry_num1.pack(pady=5)
@@ -52,9 +48,7 @@ entry_num2.pack(pady=5)
 tk.Button(root, text="Determinar Mayor", command=determinar_mayor).pack(pady=10)
 tk.Button(root, text="Limpiar Campos", command=limpiar_campos).pack(pady=10)
 
-# Crear cuadro de texto para mostrar el resultado
 result_text = tk.Text(root, height=5, width=40)
 result_text.pack(pady=20)
 
-# Ejecutar el bucle principal
 root.mainloop()

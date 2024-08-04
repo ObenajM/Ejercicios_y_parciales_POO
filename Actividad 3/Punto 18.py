@@ -19,7 +19,6 @@ class Empleado(object):
         return "Código: {} - Nombre: {} - Salario Bruto: ${:.2f} - Salario Neto: ${:.2f}".format(
             self.cod_empleado, self.nombre, self.salario_bruto(), self.salario_neto())
 
-# Función que se ejecutará al hacer clic en el botón "Calcular Salario"
 def calcular_salario():
     try:
         cod_empleado = entry_cod_empleado.get()
@@ -34,7 +33,6 @@ def calcular_salario():
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingresa valores numéricos válidos para horas trabajadas, valor de la hora y porcentaje de retención.")
 
-# Función que se ejecutará al hacer clic en el botón "Limpiar"
 def limpiar_campos():
     entry_cod_empleado.delete(0, tk.END)
     entry_nombre.delete(0, tk.END)
@@ -43,12 +41,10 @@ def limpiar_campos():
     entry_porc_retencion.delete(0, tk.END)
     result_text.delete(1.0, tk.END)
 
-# Crear la ventana principal
 root = tk.Tk()
 root.title("Calculadora de Salario de Empleado")
 root.geometry("400x550")  # Ancho x Alto
 
-# Crear y colocar widgets
 tk.Label(root, text="Código del Empleado").pack(pady=5)
 entry_cod_empleado = tk.Entry(root)
 entry_cod_empleado.pack(pady=5)
@@ -72,9 +68,7 @@ entry_porc_retencion.pack(pady=5)
 tk.Button(root, text="Calcular Salario", command=calcular_salario).pack(pady=10)
 tk.Button(root, text="Limpiar Campos", command=limpiar_campos).pack(pady=10)
 
-# Crear cuadro de texto para mostrar el resultado
 result_text = tk.Text(root, height=5, width=40)
 result_text.pack(pady=20)
 
-# Ejecutar el bucle principal
 root.mainloop()
