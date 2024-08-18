@@ -1,4 +1,4 @@
-from casa_urbana import CasaUrbana
+from casaurbana import CasaUrbana
 
 class CasaConjuntoCerrado(CasaUrbana):
     valor_area = 2500000

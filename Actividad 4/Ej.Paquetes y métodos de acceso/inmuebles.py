@@ -1,14 +1,14 @@
 from inmueble import Inmueble
-from inmueble_vivienda import InmuebleVivienda
+from inmueblevivienda import InmuebleVivienda
 from apartamento import Apartamento
-from casa_rural import CasaRural
-from casa_urbana import CasaUrbana
-from apartamento_familiar import ApartamentoFamiliar
+from casarural import CasaRural
+from casaurbana import CasaUrbana
+from apartamentofamiliar import ApartamentoFamiliar
 from apartaestudio import Apartaestudio
-from casa_conjunto_cerrado import CasaConjuntoCerrado
-from casa_independiente import CasaIndependiente
+from casaconjuntocerrado import CasaConjuntoCerrado
+from casaindependiente import CasaIndependiente
 from local import Local
-from local_comercial import LocalComercial
+from localcomercial import LocalComercial
 from oficina import Oficina
 
 def main():
