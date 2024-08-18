@@ -1,43 +1,25 @@
-from ciclista import Ciclista
+from equipo import Equipo
+from velocista import Velocista
+from escalador import Escalador
+from contrarrelojista import Contrarrelojista
 
-class Equipo:
-    # Contador de tiempo
-    total_tiempo = 0.0
+def main():
+    equipo1 = Equipo("Sky", "Estados Unidos")
+    velocista1 = Velocista(123979, "Geraint Thomas", 320, 25)
+    escalador1 = Escalador(123980, "Egan Bernal", 25, 10)
+    contrarrelojista1 = Contrarrelojista(123981, "Jonathan Castroviejo", 120)
 
-    def __init__(self, nombre, pais):
-        self.nombre = nombre
-        self.pais = pais
-        self.lista_ciclistas = [] # Lista de ciclistas
-    
-    def get_nombre(self):
-        return self.nombre
+    equipo1.añadir_ciclista(velocista1)
+    equipo1.añadir_ciclista(escalador1)
+    equipo1.añadir_ciclista(contrarrelojista1)
 
-    def set_nombre(self, nombre):
-        self.nombre = nombre
+    velocista1.set_tiempo_acumulado(365)
+    escalador1.set_tiempo_acumulado(385)
+    contrarrelojista1.set_tiempo_acumulado(370)
 
-    def get_pais(self):
-        return self.pais
+    equipo1.calcular_total_tiempo()
+    equipo1.imprimir()
+    equipo1.listar_equipo()
 
-    def set_pais(self, pais):
-        self.pais = pais
-
-    def añadir_ciclista(self, ciclista):
-        self.lista_ciclistas.append(ciclista)
-
-    def listar_equipo(self):
-        for ciclista in self.lista_ciclistas:
-            print(ciclista.get_nombre())
-
-    def buscar_ciclista(self):
-        nombre_ciclista = input("Ingrese el nombre del ciclista: ")
-        for ciclista in self.lista_ciclistas:
-            if ciclista.get_nombre() == nombre_ciclista:
-                print(ciclista.get_nombre())
-
-    def calcular_total_tiempo(self):
-        self.total_tiempo = sum(ciclista.get_tiempo_acumulado() for ciclista in self.lista_ciclistas)
-
-    def imprimir(self):
-        print(f"Nombre del equipo = {self.nombre}")
-        print(f"País = {self.pais}")
-        print(f"Total tiempo del equipo = {self.total_tiempo}")
+if __name__ == "__main__":
+    main()   
