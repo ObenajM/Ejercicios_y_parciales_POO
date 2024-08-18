@@ -1,5 +1,3 @@
-from ciclista import Ciclista
-
 class Equipo:
     # Contador de tiempo
     total_tiempo = 0.0
