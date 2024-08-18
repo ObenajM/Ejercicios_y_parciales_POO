@@ -1,27 +1,27 @@
-from typing import List
 from ciclista import Ciclista
 
 class Equipo:
-    total_tiempo = 0.0  # Atributo de clase para el tiempo total acumulado
+    # Contador de tiempo
+    total_tiempo = 0.0
 
-    def __init__(self, nombre: str, pais: str):
+    def __init__(self, nombre, pais):
         self.nombre = nombre
         self.pais = pais
-        self.lista_ciclistas: List[Ciclista] = []  # Lista de ciclistas
+        self.lista_ciclistas = [] # Lista de ciclistas
     
-    def get_nombre(self) -> str:
+    def get_nombre(self):
         return self.nombre
 
-    def set_nombre(self, nombre: str):
+    def set_nombre(self, nombre):
         self.nombre = nombre
 
-    def get_pais(self) -> str:
+    def get_pais(self):
         return self.pais
 
-    def set_pais(self, pais: str):
+    def set_pais(self, pais):
         self.pais = pais
 
-    def añadir_ciclista(self, ciclista: Ciclista):
+    def añadir_ciclista(self, ciclista):
         self.lista_ciclistas.append(ciclista)
 
     def listar_equipo(self):
