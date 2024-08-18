@@ -22,4 +22,4 @@ def main():
     equipo1.listar_equipo()
 
 if __name__ == "__main__":
-    main()
+    main()   
