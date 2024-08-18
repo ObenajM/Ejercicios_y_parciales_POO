@@ -17,5 +17,4 @@ class TrianguloEquilatero(object):
 
 Lado= float(input("Ingrese el lado del triangulo: "))
 Triangulo1 = TrianguloEquilatero(Lado)
-
 print(Triangulo1)
