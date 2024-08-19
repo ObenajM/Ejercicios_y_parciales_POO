@@ -1,15 +1,5 @@
-from inmueble import Inmueble
-from inmueblevivienda import InmuebleVivienda
-from apartamento import Apartamento
-from casarural import CasaRural
-from casaurbana import CasaUrbana
 from apartamentofamiliar import ApartamentoFamiliar
 from apartaestudio import Apartaestudio
-from casaconjuntocerrado import CasaConjuntoCerrado
-from casaindependiente import CasaIndependiente
-from local import Local
-from localcomercial import LocalComercial
-from oficina import Oficina
 
 def main():
     apto1 = ApartamentoFamiliar(103067, 120, "Avenida Santander 45-45", 3, 2, 200000)
