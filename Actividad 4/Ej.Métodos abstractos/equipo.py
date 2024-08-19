@@ -1,11 +1,10 @@
 class Equipo:
-    # Contador de tiempo
-    total_tiempo = 0.0
 
     def __init__(self, nombre, pais):
         self.nombre = nombre
         self.pais = pais
         self.lista_ciclistas = [] # Lista de ciclistas
+        self.total_tiempo = 0.0
     
     def get_nombre(self):
         return self.nombre
