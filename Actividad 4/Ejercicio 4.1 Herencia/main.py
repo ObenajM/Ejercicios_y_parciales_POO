@@ -1,7 +1,7 @@
 from cuenta_ahorros import CuentaAhorros
 from cuenta_corriente import CuentaCorriente
 
-# Crear una cuenta de ahorros
+# Cuenta de ahorros
 cuenta_ahorros = CuentaAhorros(100000, 10)
 cuenta_ahorros.consignar(50000)
 cuenta_ahorros.retirar(70000)
