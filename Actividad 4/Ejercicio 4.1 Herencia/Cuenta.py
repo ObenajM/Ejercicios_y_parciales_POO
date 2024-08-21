@@ -24,11 +24,12 @@ class Cuenta:
     def extracto_mensual(self):
         self._saldo -= self._comision_mensual
         self.calcular_interes_mensual()
-        self._comision_mensual = 0.0  # Reiniciar la comisión
+        self._comision_mensual = 0.0 
 
     def imprimir(self):
         print(f"Saldo: {self._saldo}")
+        print(f"Comisión mensual: {self._comision_mensual}")
         print(f"Número de consignaciones: {self._num_consignaciones}")
         print(f"Número de retiros: {self._num_retiros}")
         print(f"Tasa anual: {self._tasa_anual}")
-        print(f"Comisión mensual: {self._comision_mensual}")
+        
