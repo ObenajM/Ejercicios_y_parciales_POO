@@ -6,7 +6,7 @@ class VentanaCilindro(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Cilindro")
-        self.geometry("300x200")
+        self.geometry("220x200")
         self.create_widgets()
 
     def create_widgets(self):
@@ -43,7 +43,7 @@ class VentanaEsfera(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Esfera")
-        self.geometry("300x200")
+        self.geometry("220x200")
         self.create_widgets()
 
     def create_widgets(self):
@@ -74,7 +74,7 @@ class VentanaPiramide(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Pirámide")
-        self.geometry("300x250")
+        self.geometry("220x200")
         self.create_widgets()
 
     def create_widgets(self):
