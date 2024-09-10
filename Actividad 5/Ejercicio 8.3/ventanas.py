@@ -10,12 +10,12 @@ class VentanaCilindro(tk.Tk):
         self.create_widgets()
 
     def create_widgets(self):
-        self.radio_label = tk.Label(self, text="Radio (cms):")
+        self.radio_label = tk.Label(self, text="Radio (cm):")
         self.radio_label.pack()
         self.radio_entry = tk.Entry(self)
         self.radio_entry.pack()
 
-        self.altura_label = tk.Label(self, text="Altura (cms):")
+        self.altura_label = tk.Label(self, text="Altura (cm):")
         self.altura_label.pack()
         self.altura_entry = tk.Entry(self)
         self.altura_entry.pack()
@@ -47,7 +47,7 @@ class VentanaEsfera(tk.Tk):
         self.create_widgets()
 
     def create_widgets(self):
-        self.radio_label = tk.Label(self, text="Radio (cms):")
+        self.radio_label = tk.Label(self, text="Radio (cm):")
         self.radio_label.pack()
         self.radio_entry = tk.Entry(self)
         self.radio_entry.pack()
@@ -78,17 +78,17 @@ class VentanaPiramide(tk.Tk):
         self.create_widgets()
 
     def create_widgets(self):
-        self.base_label = tk.Label(self, text="Base (cms):")
+        self.base_label = tk.Label(self, text="Base (cm):")
         self.base_label.pack()
         self.base_entry = tk.Entry(self)
         self.base_entry.pack()
 
-        self.altura_label = tk.Label(self, text="Altura (cms):")
+        self.altura_label = tk.Label(self, text="Altura (cm):")
         self.altura_label.pack()
         self.altura_entry = tk.Entry(self)
         self.altura_entry.pack()
 
-        self.apotema_label = tk.Label(self, text="Apotema (cms):")
+        self.apotema_label = tk.Label(self, text="Apotema (cm):")
         self.apotema_label.pack()
         self.apotema_entry = tk.Entry(self)
         self.apotema_entry.pack()
