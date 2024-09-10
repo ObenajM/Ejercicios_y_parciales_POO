@@ -1,11 +1,11 @@
 import tkinter as tk
-from ventanas import VentanaCilindro, VentanaEsfera, VentanaPiramide
+from Ventanas import VentanaCilindro, VentanaEsfera, VentanaPiramide
 
 class VentanaPrincipal(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Figuras")
-        self.geometry("350x150")
+        self.geometry("220x100")
         self.create_widgets()
 
     def create_widgets(self):

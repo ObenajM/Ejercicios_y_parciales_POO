@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from figuras import Cilindro, Esfera, Piramide
+from Figuras import Cilindro, Esfera, Piramide
 
 class VentanaCilindro(tk.Tk):
     def __init__(self):
