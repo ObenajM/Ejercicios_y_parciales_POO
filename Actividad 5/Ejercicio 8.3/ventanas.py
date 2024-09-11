@@ -23,9 +23,9 @@ class VentanaCilindro(tk.Tk):
         self.calculate_button = tk.Button(self, text="Calcular", command=self.calculate)
         self.calculate_button.pack()
 
-        self.volumen_label = tk.Label(self, text="Volumen (cm³):")
+        self.volumen_label = tk.Label(self, text="Volumen (cm3):")
         self.volumen_label.pack()
-        self.superficie_label = tk.Label(self, text="Superficie (cm²):")
+        self.superficie_label = tk.Label(self, text="Superficie (cm2):")
         self.superficie_label.pack()
 
     def calculate(self):
@@ -33,8 +33,8 @@ class VentanaCilindro(tk.Tk):
             radio = float(self.radio_entry.get())
             altura = float(self.altura_entry.get())
             cilindro = Cilindro(radio, altura)
-            self.volumen_label.config(text=f"Volumen (cm³): {cilindro.get_volumen():.2f}")
-            self.superficie_label.config(text=f"Superficie (cm²): {cilindro.get_superficie():.2f}")
+            self.volumen_label.config(text=f"Volumen (cm3): {cilindro.get_volumen():.2f}")
+            self.superficie_label.config(text=f"Superficie (cm2): {cilindro.get_superficie():.2f}")
         except ValueError:
             messagebox.showerror("Error", "Campo nulo o error en formato de número")
 
@@ -55,17 +55,17 @@ class VentanaEsfera(tk.Tk):
         self.calculate_button = tk.Button(self, text="Calcular", command=self.calculate)
         self.calculate_button.pack()
 
-        self.volumen_label = tk.Label(self, text="Volumen (cm³):")
+        self.volumen_label = tk.Label(self, text="Volumen (cm3):")
         self.volumen_label.pack()
-        self.superficie_label = tk.Label(self, text="Superficie (cm²):")
+        self.superficie_label = tk.Label(self, text="Superficie (cm2):")
         self.superficie_label.pack()
 
     def calculate(self):
         try:
             radio = float(self.radio_entry.get())
             esfera = Esfera(radio)
-            self.volumen_label.config(text=f"Volumen (cm³): {esfera.get_volumen():.2f}")
-            self.superficie_label.config(text=f"Superficie (cm²): {esfera.get_superficie():.2f}")
+            self.volumen_label.config(text=f"Volumen (cm3): {esfera.get_volumen():.2f}")
+            self.superficie_label.config(text=f"Superficie (cm2): {esfera.get_superficie():.2f}")
         except ValueError:
             messagebox.showerror("Error", "Campo nulo o error en formato de número")
 
@@ -96,9 +96,9 @@ class VentanaPiramide(tk.Tk):
         self.calculate_button = tk.Button(self, text="Calcular", command=self.calculate)
         self.calculate_button.pack()
 
-        self.volumen_label = tk.Label(self, text="Volumen (cm³):")
+        self.volumen_label = tk.Label(self, text="Volumen (cm3):")
         self.volumen_label.pack()
-        self.superficie_label = tk.Label(self, text="Superficie (cm²):")
+        self.superficie_label = tk.Label(self, text="Superficie (cm2):")
         self.superficie_label.pack()
 
     def calculate(self):
@@ -107,7 +107,7 @@ class VentanaPiramide(tk.Tk):
             altura = float(self.altura_entry.get())
             apotema = float(self.apotema_entry.get())
             piramide = Piramide(base, altura, apotema)
-            self.volumen_label.config(text=f"Volumen (cm³): {piramide.get_volumen():.2f}")
-            self.superficie_label.config(text=f"Superficie (cm²): {piramide.get_superficie():.2f}")
+            self.volumen_label.config(text=f"Volumen (cm3): {piramide.get_volumen():.2f}")
+            self.superficie_label.config(text=f"Superficie (cm2): {piramide.get_superficie():.2f}")
         except ValueError:
             messagebox.showerror("Error", "Campo nulo o error en formato de número")
